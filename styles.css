@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  .pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .price-card {
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding: 30px;
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    min-width: 250px; /* Prevent cards from becoming too narrow */
+    max-width: 400px; /* Prevent cards from becoming too wide on large screens */
+  }
+  .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+  }
+  
+  .card-title h2 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+  .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 20px;
+  }
+  
+  .price span {
+    font-size: 0.4em;
+    font-weight: normal;
+    color: #666;
+  }
+  .features {
+    list-style: none;
+    margin: 20px 0 30px;
+  }
+  
+  .features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .features li:last-child {
+    border-bottom: none;
+  }
+  .cta-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.9;
+  }
+  
+  .price-card:nth-child(1) .card-title {
+    background-color: #3498db; /* Blue for Basic */
+  }
+  
+  .price-card:nth-child(2) .card-title {
+    background-color: #9b59b6; /* Purple for Pro */
+  }
+  
+  .price-card:nth-child(3) .card-title {
+    background-color: #e74c3c; /* Red for Enterprise */
+  }
+  
+  .price-card:nth-child(1) {
+    background-color: #ebf5fb; /* Light blue */
+  }
+  
+  .price-card:nth-child(2) {
+    background-color: #f4ecf7; /* Light purple */
+  }
+  
+  .price-card:nth-child(3) {
+    background-color: #fae5e3; /* Light red */
+  }
+  .price-card:nth-child(1) .cta-button {
+    background-color: #3498db;
+  }
+  
+  .price-card:nth-child(2) .cta-button {
+    background-color: #9b59b6;
+  }
+  
+  .price-card:nth-child(3) .cta-button {
+    background-color: #e74c3c;
+  }
+  .price-card:nth-child(1) .cta-button {
+    background-color: #3498db;
+  }
+  
+  .price-card:nth-child(2) .cta-button {
+    background-color: #9b59b6;
+  }
+  
+  .price-card:nth-child(3) .cta-button {
+    background-color: #e74c3c;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .price-card {
+      width: 45%;
+      margin: 0 2% 30px 2%;
+    }
+  
+    .price-card:nth-child(3) {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Desktop View (992px and above) */
+  @media (min-width: 992px) {
+    .price-card {
+      width: 30%;
+      margin: 0 1.5% 30px 1.5%;
+    }
+  }
+  .price-card {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
